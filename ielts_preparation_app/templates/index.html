@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Preparation App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Welcome to IELTS Preparation App</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('listening_page') }}">Listening</a></li>
+            <li><a href="{{ url_for('reading_page') }}">Reading</a></li>
+            <li><a href="{{ url_for('writing_page') }}">Writing</a></li>
+            <li><a href="{{ url_for('speaking_page') }}">Speaking</a></li>
+            <li><a href="{{ url_for('diagnostics_page') }}">Skill Diagnostics</a></li>
+            <li><a href="{{ url_for('adaptive_learning_page') }}">Adaptive Learning</a></li>
+        </ul>
+    </nav>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

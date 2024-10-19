@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Skill Diagnostics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <a href="{{ url_for('index') }}" class="home-button">Home</a>
+    <h1>IELTS Skill Diagnostics</h1>
+    <button onclick="startDiagnosticTest('listening')">Start Diagnostic Tests</button>
+    <div id="diagnostic-test"></div>
+    <div id="diagnostic-result"></div>
+    <div id="learning-plan"></div>
+    <script src="{{ url_for('static', filename='js/diagnostics.js') }}"></script>
+</body>
+</html>

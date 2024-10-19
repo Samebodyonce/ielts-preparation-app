@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Reading Practice</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <a href="{{ url_for('index') }}" class="home-button">Home</a>
+    <h1>IELTS Reading Practice</h1>
+    <div id="passage">
+        <!-- Reading passage will be inserted here -->
+    </div>
+    <div id="questions">
+        <!-- Questions will be dynamically inserted here -->
+    </div>
+    <button id="submit-answers">Submit Answers</button>
+    <div id="results">
+        <!-- Results will be displayed here -->
+    </div>
+    <script src="{{ url_for('static', filename='js/reading.js') }}"></script>
+</body>
+</html>

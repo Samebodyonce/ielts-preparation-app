@@ -1,0 +1,19 @@
+# Virtual Environment
+venv/
+env/
+*.pyc
+__pycache__/
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore

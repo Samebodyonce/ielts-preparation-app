@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Practice</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <a href="{{ url_for('index') }}" class="home-button">Home</a>
+    <h1>IELTS Writing Practice</h1>
+    <select id="task-type">
+        <option value="1">Task 1</option>
+        <option value="2">Task 2</option>
+    </select>
+    <button id="get-topic">Get Random Topic</button>
+    <input type="text" id="custom-topic" placeholder="Enter custom topic">
+    <div id="topic-display"></div>
+    <textarea id="essay" rows="10" cols="50" placeholder="Write your essay here..."></textarea>
+    <button id="submit-essay">Analyze Essay</button>
+    <div id="results">
+        <!-- Analysis results will be displayed here -->
+    </div>
+    <script src="{{ url_for('static', filename='js/writing.js') }}"></script>
+</body>
+</html>
